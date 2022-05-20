@@ -1,0 +1,14 @@
+public class OlderAccountsUtilityOlderAccountsUtility {
+    public static void updateOlderAccounts() {
+        Account[] oldAccounts = [SELECT Id, Description FROM Account ORDER BY CreatedDate ASC LIMIT 5];
+        // Getting the 3 oldest accounts
+        for(Account acct:oldAccounts) {
+            acct.description = 'hello world';
+        }
+        //save the changes you made.
+        update oldAccounts;
+    }
+}
+
+// calling the function:-
+OlderAccountsUtility.updateOlderAccounts();
