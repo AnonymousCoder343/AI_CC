@@ -82,3 +82,16 @@ def end():
  print('.................................')
 
  print('.................................')
+input()
+
+greet('ZealBot', '2022') # change it as you need
+
+remind_name()
+
+guess_age()
+
+count()
+
+test()
+
+end()
